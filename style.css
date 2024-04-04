@@ -85,6 +85,50 @@ span{
     gap: 20px; 
 }
 
+.announcements{
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2rem;
+    text-align: left;
+    margin: 30px 1rem 1rem 0;
+}
+
+.news{
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 10px;
+}
+
+.trending{
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2rem;
+    text-align: justify;
+    margin: 1rem 1rem 1rem 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.trending img{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    /*grid-column: 1 / 2;*/
+    /*padding: .5rem;*/
+}
+
+.trending p{
+    /*
+    list-style: none;
+    align-content: center;
+    grid-column: 2 / 3;
+    */
+    margin: 0;
+    line-height: 3.5rem;
+}
+
 .main-left {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -95,16 +139,18 @@ span{
 .main-right{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: 1fr;
 }
 
 .card {
     border-left: 5px solid #4d194d;
     background-color: white;
     border-radius: 0.5rem;
-    display: grid;
+    margin-bottom: 20px;
+    flex: 1;
+    /*display: grid;
     grid-template-columns: 1fr; 
-    grid-template-rows: auto 1fr; 
+    grid-template-rows: auto 1fr; */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -123,7 +169,6 @@ span{
     margin-bottom: 20px; 
     grid-column: span 2; 
 }
-
 
 .log1{
     display: flex;
